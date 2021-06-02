@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Onliner BDT Filters Test" verbose="1">
+    <test name="Test Onliner filter results" preserve-order="true">
+        <classes>
+            <class name="onliner.runners.TestRunner"/>
+        </classes>
+    </test>
+</suite>

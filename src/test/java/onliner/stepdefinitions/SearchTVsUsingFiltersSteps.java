@@ -44,7 +44,6 @@ public class SearchTVsUsingFiltersSteps extends BaseTest {
     @When("User selects filters on Televisions page")
     public void userSelectFiltersOnTelevisionsPage(List<List<String>> userFilters){
         this.filtersData = userFilters;
-
         televisionsPage = new TelevisionsPage();
         televisionsPage.selectCheckboxFilter(filtersData.get(0).get(0), filtersData.get(0).get(1));
         televisionsPage.selectCheckboxFilter(filtersData.get(1).get(0), filtersData.get(1).get(1));
