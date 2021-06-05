@@ -7,9 +7,10 @@ Scenario: Searching for tv models using filters
   * User selects 'Электроника' from catalog main page
   * User selects 'Телевидение' and open 'Телевизоры' from Electronica submenu
   When User selects filters on Televisions page
-    | Производитель       | Samsung   |      |
-    | Диагональ           | 40        | 50   |
-    | Разрешение          | 1920x1080 |      |
-    | цена в предложениях | до        | 1000 |
+    |PRODUCER    |Samsung   |
+    |RESOLUTION  |1920x1080 |
+    |MINDIAGONAL |40        |
+    |MAXDIAGONAL |50        |
+    |MAXPRICE    |1000      |
   Then search results satisfy all entered filters
 

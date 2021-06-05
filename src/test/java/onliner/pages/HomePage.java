@@ -7,11 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class OnlinerHomePage extends BaseForm {
+public class HomePage extends BaseForm {
     private static final By ONLINER_LOGO = By.className("b-top-logo");
-    private static final String formName = OnlinerHomePage.class.getName();
+    private static final String formName = HomePage.class.getName();
 
-    public OnlinerHomePage() {
+    public HomePage() {
         super(ONLINER_LOGO,formName );
     }
 
