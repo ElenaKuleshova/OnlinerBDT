@@ -9,8 +9,8 @@ public enum Filter {
 
     private String value;
 
-    Filter(final String valueToSet){
-      value = valueToSet;
+    Filter(final String defaultValue){
+      value = defaultValue;
     }
 
     public String makeString(){

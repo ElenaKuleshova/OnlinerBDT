@@ -83,9 +83,13 @@ public class BaseElement {
         WebDriverWait wait = new WebDriverWait(Browser.getDriver(), Long.parseLong(getTimeoutForCondition()));
         wait.until(ExpectedConditions.visibilityOf(getElement()));
     }
-    public void waitElementBePresent(By locator){
+    public void waitElementBePresent(){
         WebDriverWait wait = new WebDriverWait(Browser.getDriver(),  Long.parseLong(getTimeoutForCondition()));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+    public void scrollIntoView() {
+        waitElementBePresent();
+        ((JavascriptExecutor)browser.getDriver()).executeScript("arguments[0].scrollIntoView();",getElement());
     }
 
     public String getText() {
